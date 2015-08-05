@@ -1,3 +1,3 @@
-# We are Kosmos
+# Cosmos
 
 ## Let's do this
