@@ -12,10 +12,6 @@ config.cssloader = {
   aggressiveMerging: false
 },
 
-config.entry = [
-  './src/app'
-];
-
 config.output.publicPath = './',
 
 config.plugins.push(
