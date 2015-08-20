@@ -1,0 +1,5 @@
+node_modules/
+bower_components/
+ship.conf
+dist/
+npm-debug.log

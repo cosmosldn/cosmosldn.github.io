@@ -1,0 +1,39 @@
+/**
+ * Main styles
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import 'base';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Montserrat', 'Helvetica Neue', arial, sans-serif;
+  line-height: 1.45;
+  font-size: var(--size-s);
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: var(--size-m);
+}
+
+h2, h3 {
+  font-size: var(--size-s);
+}
+
+.Container {
+  margin: 0 auto;
+  max-width: 96rem;
+}

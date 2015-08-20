@@ -1,0 +1,29 @@
+/**
+ * Header styles
+ */
+
+@import '../../styles/base';
+
+.Header {
+  background: var(--color-black);
+  padding: 14rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+.Header h2 {
+  max-width: 36rem;
+  margin: 2rem auto 0;
+}
+
+.Header-logo path {
+  stroke: #fff;
+  fill: #fff;
+}
+
+/* Temp fix until we get proper svg logo */
+.Header-logo .fix {
+  stroke: #fff;
+  stroke-width: 5px;
+  fill: transparent;
+}
