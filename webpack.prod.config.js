@@ -13,8 +13,7 @@ config.cssloader = {
 },
 
 config.entry = [
-  './src/app',
-  './src/index.html'
+  './src/app'
 ];
 
 config.output.publicPath = './',
