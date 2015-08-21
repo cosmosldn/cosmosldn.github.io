@@ -1,21 +1,20 @@
 import './style.css';
 
 import React from 'react';
+import marked from 'marked';
 
 export default React.createClass({
   render() {
-    var data = this.props.data;
-
-    var listItems = data.core.map(function(item) {
+    let data = this.props.data;
+    let listItems = data.core.map(function(item, i) {
+      let rawMarkup = marked(item.text.toString(), {sanitize: true});
       return (
-        <li>
+        <li key={i}>
           <h3>{item.title}</h3>
-          <p>{item.copy}</p>
+          <p><span dangerouslySetInnerHTML={{__html: rawMarkup}} /></p>
         </li>
       )
     });
-
-
     return (
       <div className="Core">
         <div className="Container">
