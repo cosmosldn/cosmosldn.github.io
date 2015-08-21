@@ -1,11 +1,9 @@
 import styles from './contact.css';
 
-import React from 'react';
+import React, {Component} from 'react';
 
-export default React.createClass({
+export default class Contact extends Component {
   render() {
-    var data = this.props.data;
-
     return (
       <div className={styles.contact}>
         <div className={styles.container}>
@@ -13,6 +11,6 @@ export default React.createClass({
           <p><a href="#">Get in touch</a></p>
         </div>
       </div>
-    )
+    );
   }
-});
+}

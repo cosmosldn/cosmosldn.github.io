@@ -1,18 +1,14 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 import Header from '../header';
 import Core from '../core';
 import SplitScreen from '../split-screen';
 import Contact from '../contact';
 
-export default React.createClass({
-  safeStringify(obj) {
-    return JSON.stringify(obj).replace(/<\/script/g, '<\\/script').replace(/<!--/g, '<\\!--')
-  },
-
-  render () {
-    var initialProps = {
-      __html: this.safeStringify(this.props)
+export default class Root extends Component {
+  render() {
+    const initialProps = {
+      __html: this.safeStringify(this.props),
     };
 
     return (
@@ -30,12 +26,20 @@ export default React.createClass({
           <Contact data={this.props} />
 
           <script
-            id='initial-props'
-            type='application/json'
+            id="initial-props"
+            type="application/json"
             dangerouslySetInnerHTML={initialProps} />
           <script src="/bundle.js"></script>
         </body>
       </html>
-    )
+    );
   }
-});
+
+  safeStringify(obj) {
+    return JSON.stringify(obj).replace(/<\/script/g, '<\\/script').replace(/<!--/g, '<\\!--');
+  }
+}
+
+Root.propTypes = {
+  title: React.PropTypes.string,
+};

@@ -53,11 +53,21 @@ module.exports = {
     {
       test: /\.(png|jpg|gif)$/,
       loader: 'url-loader?limit=8192' // inline base64 URLs for <=8k images, direct URLs for the rest
+    }],
+    preLoaders: [{
+      test: /\.js$/,
+      loaders: ['eslint'],
+      include: [new RegExp(path.join(__dirname, 'src'))]
     }]
   },
 
   postcss: [
     require('autoprefixer-core')
-  ]
+  ],
 
+  // http://eslint.org/index.html
+  // https://github.com/yannickcr/eslint-plugin-react
+  eslint: {
+    configFile: '.eslintrc'
+  }
 };

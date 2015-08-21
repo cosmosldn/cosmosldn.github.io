@@ -1,19 +1,19 @@
 import styles from './split-screen.css';
 
-import React from 'react';
+import React, {Component} from 'react';
 import marked from 'marked';
 
-export default React.createClass({
-  render () {
-    let data = this.props.data;
-    let items = data.products.map(function(item, i) {
-      let rawMarkup = marked(item.text.toString(), {sanitize: true});
+export default class SplitScreen extends Component {
+  render() {
+    const data = this.props.data;
+    const items = data.products.map(function m(item, i) {
+      const rawMarkup = marked(item.text.toString(), {sanitize: true});
       return (
         <div className={styles.splitScreenItem} key={i}>
           <h3>{item.title}</h3>
           <p><span dangerouslySetInnerHTML={{__html: rawMarkup}} /></p>
         </div>
-      )
+      );
     });
     return (
       <div className={styles.splitScreenDark}>
@@ -21,6 +21,10 @@ export default React.createClass({
           {items}
         </div>
       </div>
-    )
+    );
   }
-});
+}
+
+SplitScreen.propTypes = {
+  data: React.PropTypes.object
+};
