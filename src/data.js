@@ -42,4 +42,4 @@ module.exports = {
       text: 'We only produce prototypes, living and interactive style guides. It\'s where our experience and core skills are.'
     }
   ]
-}
+};
