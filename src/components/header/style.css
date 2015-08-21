@@ -17,13 +17,5 @@
 }
 
 .Header-logo path {
-  stroke: #fff;
   fill: #fff;
-}
-
-/* Temp fix until we get proper svg logo */
-.Header-logo .fix {
-  stroke: #fff;
-  stroke-width: 5px;
-  fill: transparent;
 }
