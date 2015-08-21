@@ -6,13 +6,13 @@ config.devtool = 'source-map';
 config.cssnext = {
   browsers: "last 2 versions",
   compress: false
-},
+};
 
 config.cssloader = {
   aggressiveMerging: false
-},
+};
 
-config.output.publicPath = './',
+config.output.publicPath = './';
 
 config.plugins.push(
   new webpack.DefinePlugin({
