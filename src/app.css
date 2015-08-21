@@ -36,7 +36,7 @@ h2, h3 {
   font-size: var(--size-s);
 }
 
-.Container {
+:global .container {
   margin: 0 auto;
   max-width: 96rem;
 }

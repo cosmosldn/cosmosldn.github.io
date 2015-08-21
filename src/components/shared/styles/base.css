@@ -1,5 +1,10 @@
 /**
- * Base styles
+ * Shared styles
+ *
+ * Base variables
+ *
+ * Do we really need this?
+ * This is part of cssnext
  */
 :root {
   --color-background: #fff;

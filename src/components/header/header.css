@@ -4,18 +4,18 @@
 
 @import '../shared/styles/base.css';
 
-.header {
+.root {
   background: var(--color-black);
   padding: 14rem 0;
   text-align: center;
   color: #fff;
 }
 
-.header h2 {
+.root h2 {
   max-width: 36rem;
   margin: 2rem auto 0;
 }
 
-.headerLogo path {
+.logo path {
   fill: #fff;
 }

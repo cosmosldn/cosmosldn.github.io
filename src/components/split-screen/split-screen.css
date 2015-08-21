@@ -4,14 +4,14 @@
 
 @import '../shared/styles/base.css';
 
-.splitScreen {
+.root {
   position: relative;
   overflow: hidden;
   color: #fff;
 }
 
-.splitScreen:before,
-.splitScreen:after {
+.root:before,
+.root:after {
   content: '';
   position: absolute;
   top: 0;
@@ -23,43 +23,38 @@
   display: none;
 }
 
-.splitScreenDark {
-  composes: splitScreen;
-}
-
-.splitScreenDark:before {
+.root:before {
   background-color: var(--color-dark);
   left: 0;
 }
 
-.splitScreenDark:after {
+.root:after {
   background-color: var(--color-black);
   right: 0;
 }
 
-/*@media (--wide-viewport) {
-  .splitScreen:before,
-  .splitScreen:after {
+@media (--wide-viewport) {
+  .root:before,
+  .root:after {
     display: block;
   }
-}*/
+}
 
-
-.splitScreenItem {
+.item {
   padding: 12rem 6rem;
 }
 
-.splitScreenItem:nth-child(1) { background-color: var(--color-dark); }
-.splitScreenItem:nth-child(2) { background-color: var(--color-black); }
+.item:nth-child(1) { background-color: var(--color-dark); }
+.item:nth-child(2) { background-color: var(--color-black); }
 
-/*@media (--wide-viewport) {
-  .splitScreenItem {
+@media (--wide-viewport) {
+  .item {
     position: relative;
     z-index: 2;
     float: left;
     width: 50%;
   }
 
-  .splitScreenItem:nth-child(1) { padding-left: 0; }
-  .splitScreenItem:nth-child(2) { padding-right: 0; }
-}*/
+  .item:nth-child(1) { padding-left: 0; }
+  .item:nth-child(2) { padding-right: 0; }
+}

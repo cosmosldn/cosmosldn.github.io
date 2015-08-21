@@ -16,8 +16,8 @@ export default class Core extends Component {
         );
     });
     return (
-      <div className={styles.core}>
-        <div className={styles.container}>
+      <div className={styles.root}>
+        <div className="container">
           <ul>
             {listItems}
           </ul>

@@ -8,11 +8,11 @@ export default class Header extends Component {
   render() {
     const data = this.props.data;
     return (
-      <header className={styles.header}>
-        <div className={styles.headerLogo}>
+      <header className={styles.root}>
+        <div className={styles.logo}>
           <CosmosLogo />
         </div>
-        <h2>{data.slogan}</h2>
+        <h2 className={styles.title}>{data.slogan}</h2>
       </header>
     );
   }
