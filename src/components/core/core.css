@@ -2,32 +2,31 @@
  * Core styles
  */
 
-@import '../../styles/base';
-
-.Core {
+.core {
   padding: 3rem 0;
 }
 
-.Core ul {
+.core ul {
   list-style: none;
   overflow: hidden;
   margin: 0 -1.5rem;
 }
 
-.Core li {
+.core li {
   float: left;
   width: 100%;
   padding: 3rem 1.5rem;
 }
 
-@media (--small-viewport) {
-  .Core li {
+/*@media (--small-viewport) {
+  .core li {
     width: 50%;
   }
 }
 
 @media (--wide-viewport) {
-  .Core li {
+  .core li {
     width: 33.333%;
   }
 }
+*/

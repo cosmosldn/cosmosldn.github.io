@@ -1,0 +1,65 @@
+/**
+ * Split screen styles
+ */
+
+@import '../shared/styles/base.css';
+
+.splitScreen {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+.splitScreen:before,
+.splitScreen:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+
+  /* hide by default */
+  display: none;
+}
+
+.splitScreenDark {
+  composes: splitScreen;
+}
+
+.splitScreenDark:before {
+  background-color: var(--color-dark);
+  left: 0;
+}
+
+.splitScreenDark:after {
+  background-color: var(--color-black);
+  right: 0;
+}
+
+/*@media (--wide-viewport) {
+  .splitScreen:before,
+  .splitScreen:after {
+    display: block;
+  }
+}*/
+
+
+.splitScreenItem {
+  padding: 12rem 6rem;
+}
+
+.splitScreenItem:nth-child(1) { background-color: var(--color-dark); }
+.splitScreenItem:nth-child(2) { background-color: var(--color-black); }
+
+/*@media (--wide-viewport) {
+  .splitScreenItem {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 50%;
+  }
+
+  .splitScreenItem:nth-child(1) { padding-left: 0; }
+  .splitScreenItem:nth-child(2) { padding-right: 0; }
+}*/

@@ -1,9 +1,10 @@
 /**
- * Main styles
+ * App styles
  */
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import 'base';
+
+@import 'components/shared/styles/base.css';
 
 * {
   padding: 0;
@@ -21,8 +22,10 @@ html {
 body {
   font-family: 'Montserrat', 'Helvetica Neue', arial, sans-serif;
   line-height: 1.45;
-  font-size: var(--size-s);
-  color: var(--color-text);
+
+  /* change to variables */
+  font-size: 1.618rem;
+  color: #333;
 }
 
 h1 {

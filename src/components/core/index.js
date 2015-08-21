@@ -1,4 +1,4 @@
-import './style.css';
+import styles from './core.css';
 
 import React from 'react';
 import marked from 'marked';
@@ -16,8 +16,8 @@ export default React.createClass({
       )
     });
     return (
-      <div className="Core">
-        <div className="Container">
+      <div className={styles.core}>
+        <div className={styles.container}>
           <ul>
             {listItems}
           </ul>

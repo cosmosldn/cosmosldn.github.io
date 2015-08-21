@@ -1,4 +1,4 @@
-import './style.css';
+import styles from './contact.css';
 
 import React from 'react';
 
@@ -7,8 +7,8 @@ export default React.createClass({
     var data = this.props.data;
 
     return (
-      <div className="Contact">
-        <div className="Container">
+      <div className={styles.contact}>
+        <div className={styles.container}>
           <h3>Have a project in mind?</h3>
           <p><a href="#">Get in touch</a></p>
         </div>
