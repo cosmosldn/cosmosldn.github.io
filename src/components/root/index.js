@@ -6,7 +6,15 @@ import SplitScreen from '../split-screen';
 import Contact from '../contact';
 
 export default React.createClass({
+  safeStringify(obj) {
+    return JSON.stringify(obj).replace(/<\/script/g, '<\\/script').replace(/<!--/g, '<\\!--')
+  },
+
   render () {
+    var initialProps = {
+      __html: this.safeStringify(this.props)
+    };
+
     return (
       <html>
         <head>
@@ -21,7 +29,11 @@ export default React.createClass({
           <SplitScreen data={this.props} />
           <Contact data={this.props} />
 
-          {/*<script src="bundle.js"></script>*/}
+          <script
+            id='initial-props'
+            type='application/json'
+            dangerouslySetInnerHTML={initialProps} />
+          <script src="/bundle.js"></script>
         </body>
       </html>
     )

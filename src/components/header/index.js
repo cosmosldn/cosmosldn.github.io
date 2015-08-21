@@ -8,6 +8,7 @@ export default React.createClass({
   render() {
     var data = this.props.data;
 
+    console.log('data header -> ');
     return (
       <header className="Header">
         <div className="Header-logo">
