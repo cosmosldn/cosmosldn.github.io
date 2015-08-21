@@ -31,4 +31,6 @@ config.plugins.push(
   })
 );
 
+config.eslint.emitError = true;
+
 module.exports = config;
