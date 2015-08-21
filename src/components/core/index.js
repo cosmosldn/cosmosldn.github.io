@@ -1,4 +1,4 @@
-import './style.css';
+import styles from './core.css';
 
 import React, {Component} from 'react';
 import marked from 'marked';
@@ -16,8 +16,8 @@ export default class Core extends Component {
         );
     });
     return (
-      <div className="Core">
-        <div className="Container">
+      <div className={styles.root}>
+        <div className="container">
           <ul>
             {listItems}
           </ul>

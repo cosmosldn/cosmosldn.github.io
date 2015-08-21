@@ -20,7 +20,7 @@ module.exports = {
   },
 
   plugins: [
-    new ExtractTextPlugin('styles.css'), // extracts css
+    new ExtractTextPlugin('styles.css', { allChunks: true }), // extracts css
     new webpack.HotModuleReplacementPlugin(), // hot-mode
     new webpack.NoErrorsPlugin(), // https://github.com/webpack/docs/wiki/list-of-plugins#noerrorsplugin
     new StaticSiteGeneratorPlugin('bundle.js', data.routes, data)
@@ -28,7 +28,7 @@ module.exports = {
 
   // resolve paths: http://webpack.github.io/docs/resolving.html
   resolve: {
-    extensions: ['', '.js']
+    modulesDirectories: ['node_modules', 'components']
   },
 
   module: {
@@ -48,7 +48,7 @@ module.exports = {
     },
     {
       test: /\.css$/,
-      loader: ExtractTextPlugin.extract('style-loader', 'css-loader!cssnext-loader')
+      loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader!cssnext-loader')
     },
     {
       test: /\.(png|jpg|gif)$/,
@@ -61,10 +61,13 @@ module.exports = {
     }]
   },
 
+  postcss: [
+    require('autoprefixer-core')
+  ],
+
   // http://eslint.org/index.html
   // https://github.com/yannickcr/eslint-plugin-react
   eslint: {
     configFile: '.eslintrc'
   }
-
 };

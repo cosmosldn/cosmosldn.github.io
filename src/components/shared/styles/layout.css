@@ -1,0 +1,10 @@
+/**
+ * Shared styles
+ *
+ * Layout
+ */
+
+ .container {
+   margin: 0 auto;
+   max-width: 96rem;
+ }

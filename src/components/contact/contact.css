@@ -2,18 +2,18 @@
  * Contact styles
  */
 
-@import '../../styles/base';
+@import '../shared/styles/base.css';
 
-.Contact {
+.contact {
   padding: 12rem 0;
   text-align: center;
 }
 
-.Contact h3 {
+.contact h3 {
   font-size: var(--size-l);
 }
 
-.Contact a {
+.contact a {
   display: inline-block;
   font-size: var(--size-m);
   color: var(--color-dark);

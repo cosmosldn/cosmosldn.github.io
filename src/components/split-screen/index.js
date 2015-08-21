@@ -1,4 +1,4 @@
-import './style.css';
+import styles from './split-screen.css';
 
 import React, {Component} from 'react';
 import marked from 'marked';
@@ -9,15 +9,15 @@ export default class SplitScreen extends Component {
     const items = data.products.map(function m(item, i) {
       const rawMarkup = marked(item.text.toString(), {sanitize: true});
       return (
-        <div className="SplitScreen-item" key={i}>
+        <div className={styles.item} key={i}>
           <h3>{item.title}</h3>
           <p><span dangerouslySetInnerHTML={{__html: rawMarkup}} /></p>
         </div>
       );
     });
     return (
-      <div className="SplitScreen SplitScreen--dark">
-        <div className="Container">
+      <div className={styles.root}>
+        <div className="container">
           {items}
         </div>
       </div>

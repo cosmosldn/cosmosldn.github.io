@@ -1,4 +1,4 @@
-import './style.css';
+import styles from './header.css';
 
 import React, {Component} from 'react';
 
@@ -8,11 +8,11 @@ export default class Header extends Component {
   render() {
     const data = this.props.data;
     return (
-      <header className="Header">
-        <div className="Header-logo">
+      <header className={styles.root}>
+        <div className={styles.logo}>
           <CosmosLogo />
         </div>
-        <h2>{data.slogan}</h2>
+        <h2 className={styles.title}>{data.slogan}</h2>
       </header>
     );
   }
