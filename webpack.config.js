@@ -5,20 +5,17 @@ var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
 var data = require('./src/data');
 
-
 module.exports = {
 
   // http://webpack.github.io/docs/configuration.html#devtool
   devtool: 'eval',
 
   // http://gaearon.github.io/react-hot-loader/getstarted/
-  entry: [
-    './src/app'
-  ],
+  entry: './src/app.js',
 
   output: {
+    filename: 'bundle.js',
     path: path.join(__dirname, 'dist'),
-    publicPath: '/',
     libraryTarget: 'umd'
   },
 
