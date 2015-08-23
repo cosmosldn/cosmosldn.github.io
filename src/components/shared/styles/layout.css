@@ -8,3 +8,8 @@
    margin: 0 auto;
    max-width: 96rem;
  }
+
+.half {
+  float: left;
+  width: 50%;
+}

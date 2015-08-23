@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Header from '../header';
 import Core from '../core';
 import SplitScreen from '../split-screen';
+import Workflow from '../workflow';
 import Contact from '../contact';
 
 export default class Root extends Component {
@@ -23,6 +24,7 @@ export default class Root extends Component {
           <Header data={this.props} />
           <Core data={this.props} />
           <SplitScreen data={this.props} />
+          <Workflow data={this.props} />
           <Contact data={this.props} />
 
           <script
@@ -41,5 +43,5 @@ export default class Root extends Component {
 }
 
 Root.propTypes = {
-  title: React.PropTypes.string,
+  title: React.PropTypes.string
 };
