@@ -2,8 +2,9 @@ import React, {Component} from 'react';
 
 import Header from '../header';
 import Core from '../core';
-import SplitScreen from '../split-screen';
 import Workflow from '../workflow';
+import Deliverables from '../deliverables';
+import SplitScreen from '../split-screen';
 import Contact from '../contact';
 
 export default class Root extends Component {
@@ -23,8 +24,9 @@ export default class Root extends Component {
         <body>
           <Header data={this.props} />
           <Core data={this.props} />
-          <SplitScreen data={this.props} />
           <Workflow data={this.props} />
+          <Deliverables data={this.props} />
+          <SplitScreen data={this.props} />
           <Contact data={this.props} />
 
           <script

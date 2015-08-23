@@ -9,6 +9,7 @@
 :root {
   --color-background: #fff;
   --color-text: #333;
+  --color-text-inverted: #fff;
   --color-black: #1a1a1a;
   --color-dark: #232321;
   --color-yellow: #ffb91e;

@@ -6,6 +6,7 @@
 
 .root {
   padding: 14rem 0;
+  overflow: hidden;
 }
 
 .image {
