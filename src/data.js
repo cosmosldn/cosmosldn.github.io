@@ -41,5 +41,10 @@ module.exports = {
       title: 'Styleguides',
       text: 'We only produce prototypes, living and interactive style guides. It\'s where our experience and core skills are.'
     }
-  ]
+  ],
+
+  workflow: {
+    title: 'Workflow',
+    text: 'Collaboration is in the heart of Cosmos. In order for us to deliver the most effective product to our clients, we work with them and not for them. Our flexible approach means that we have the perfect mix of remote/in-house collaboration.'
+  }
 };
