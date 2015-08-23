@@ -46,5 +46,10 @@ module.exports = {
   workflow: {
     title: 'Workflow',
     text: 'Collaboration is in the heart of Cosmos. In order for us to deliver the most effective product to our clients, we work with them and not for them. Our flexible approach means that we have the perfect mix of remote/in-house collaboration.'
+  },
+
+  deliverables: {
+    title: 'Deliverables',
+    text: 'At Cosmos, we deliver modern day deliverables. This means, our clients are not getting bombarded with hard-coded PSD files but instead, with real products tailored to meet their needs. Everything we do is built with testibility and extendibility in mind.'
   }
 };
