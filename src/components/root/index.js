@@ -32,8 +32,9 @@ export default class Root extends Component {
           <script
             id="initial-props"
             type="application/json"
-            dangerouslySetInnerHTML={initialProps} />
-          <script src="/bundle.js"></script>
+            dangerouslySetInnerHTML={initialProps}>
+          </script>
+          <script src="bundle.js"></script>
         </body>
       </html>
     );
