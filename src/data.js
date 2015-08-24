@@ -51,5 +51,16 @@ module.exports = {
   deliverables: {
     title: 'Deliverables',
     text: 'At Cosmos, we deliver modern day deliverables. This means, our clients are not getting bombarded with hard-coded PSD files but instead, with real products tailored to meet their needs. Everything we do is built with testibility and extendibility in mind.'
-  }
+  },
+
+  people: [
+    {
+      title: 'Pedro',
+      text: '<p>Gene Liebel guides clients in their efforts to envision, plan, and roll out best-in-category products and services.</p><p>Prior to Work & Co, Gene was Founding Partner, Chief Strategy Officer at Huge, where he created the User Experience discipline and oversaw the development of the agency\'s unique capabilities and process, including its groundbreaking approach to UX, product design, and analytics. Gene also oversaw several of the company\'s most successful and newsworthy projects, including HBO GO, while helping to grow the company from three to 600 employees.</p>'
+    },
+    {
+      title: 'Henrique',
+      text: '<p>Felipe Memoria brings together user experience and visual design, driving Work & Co\'s unique vision for building successful products and services. Felipe has led the design of Work & Co\'s largest cross-platform projects, including Eurosport, Oi and Virgin America.<p></p>Felipe was previously Partner, Global Head of User Experience at Huge. He spent six years helping the company grow, eventually managing a team of over one hundred designers across seven offices worldwide. He designed some of the company\'s most celebrated products, including CNN.com, HBO GO and TED Talks.</p>'
+    }
+  ]
 };

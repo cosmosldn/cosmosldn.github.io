@@ -23,15 +23,15 @@
   display: none;
 }
 
-.root:before {
-  background-color: var(--color-dark);
-  left: 0;
-}
+.root:before { left: 0; }
+.root:after { right: 0; }
 
-.root:after {
-  background-color: var(--color-black);
-  right: 0;
-}
+.dark:before { background-color: var(--color-dark); }
+.dark:after { background-color: var(--color-black); }
+
+.light:before { background-color: var(--color-yellow); }
+.light:after { background-color: var(--color-orange); }
+
 
 @media (--wide-viewport) {
   .root:before,
@@ -44,8 +44,12 @@
   padding: 12rem 6rem;
 }
 
-.item:nth-child(1) { background-color: var(--color-dark); }
-.item:nth-child(2) { background-color: var(--color-black); }
+.dark .item:nth-child(1) { background-color: var(--color-dark); }
+.dark .item:nth-child(2) { background-color: var(--color-black); }
+
+.light .item:nth-child(1) { background-color: var(--color-yellow); }
+.light .item:nth-child(2) { background-color: var(--color-orange); }
+
 
 @media (--wide-viewport) {
   .item {

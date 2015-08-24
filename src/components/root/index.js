@@ -5,6 +5,7 @@ import Core from '../core';
 import Workflow from '../workflow';
 import Deliverables from '../deliverables';
 import SplitScreen from '../split-screen';
+import People from '../people';
 import Contact from '../contact';
 
 export default class Root extends Component {
@@ -26,7 +27,8 @@ export default class Root extends Component {
           <Core data={this.props} />
           <Workflow data={this.props} />
           <Deliverables data={this.props} />
-          <SplitScreen data={this.props} />
+          <SplitScreen data={this.props.products} theme="dark" />
+          <People data={this.props} />
           <Contact data={this.props} />
 
           <script
@@ -45,5 +47,6 @@ export default class Root extends Component {
 }
 
 Root.propTypes = {
-  title: React.PropTypes.string
+  title: React.PropTypes.string,
+  products: React.PropTypes.array
 };
