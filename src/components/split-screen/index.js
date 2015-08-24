@@ -6,8 +6,9 @@ import marked from 'marked';
 export default class SplitScreen extends Component {
   render() {
     const data = this.props.data;
-    const items = data.products.map(function m(item, i) {
-      const rawMarkup = marked(item.text.toString(), {sanitize: true});
+
+    const items = data.map(function m(item, i) {
+      const rawMarkup = marked(item.text.toString(), {sanitize: false});
       return (
         <div className={styles.item} key={i}>
           <h3>{item.title}</h3>
@@ -15,8 +16,9 @@ export default class SplitScreen extends Component {
         </div>
       );
     });
+
     return (
-      <div className={styles.root}>
+      <div className={[styles.root, styles[this.props.theme]].join(' ')}>
         <div className="container">
           {items}
         </div>
@@ -26,5 +28,6 @@ export default class SplitScreen extends Component {
 }
 
 SplitScreen.propTypes = {
-  data: React.PropTypes.object
+  data: React.PropTypes.array,
+  theme: React.PropTypes.string
 };
