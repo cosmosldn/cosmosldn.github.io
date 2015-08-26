@@ -10,44 +10,24 @@ import Contact from '../contact';
 
 export default class Root extends Component {
   render() {
-    const initialProps = {
-      __html: this.safeStringify(this.props),
-    };
+    const data = this.props.data;
 
     return (
-      <html>
-        <head>
-          <meta charSet="UTF-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>{this.props.title}</title>
-          <link rel="stylesheet" href="styles.css" />
-        </head>
-        <body>
-          <Header data={this.props} />
-          <Core data={this.props} />
-          <Workflow data={this.props} />
-          <Deliverables data={this.props} />
-          <SplitScreen data={this.props.products} theme="dark" />
-          <People data={this.props} />
-          <Contact data={this.props} />
-
-          <script
-            id="initial-props"
-            type="application/json"
-            dangerouslySetInnerHTML={initialProps}>
-          </script>
-          <script src="bundle.js"></script>
-        </body>
-      </html>
+      <div className="Root">
+        <Header data={data} />
+        <Core data={data} />
+        <Workflow data={data} />
+        <Deliverables data={data} />
+        <SplitScreen data={data.products} theme="dark" />
+        <People data={data} />
+        <Contact data={data} />
+      </div>
     );
-  }
-
-  safeStringify(obj) {
-    return JSON.stringify(obj).replace(/<\/script/g, '<\\/script').replace(/<!--/g, '<\\!--');
   }
 }
 
 Root.propTypes = {
-  title: React.PropTypes.string,
+  data: React.PropTypes.object,
   products: React.PropTypes.array
 };
+
