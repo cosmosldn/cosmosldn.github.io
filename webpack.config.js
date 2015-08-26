@@ -11,19 +11,21 @@ module.exports = {
   devtool: 'eval',
 
   // http://gaearon.github.io/react-hot-loader/getstarted/
-  entry: './src/app.js',
+  entry: [
+    './src/app',
+    './src/index.html',
+  ],
 
   output: {
     filename: 'bundle.js',
     path: path.join(__dirname, 'dist'),
-    libraryTarget: 'umd'
+    publicPath: '/'
   },
 
   plugins: [
     new ExtractTextPlugin('styles.css', { allChunks: true }), // extracts css
     new webpack.HotModuleReplacementPlugin(), // hot-mode
-    new webpack.NoErrorsPlugin(), // https://github.com/webpack/docs/wiki/list-of-plugins#noerrorsplugin
-    new StaticSiteGeneratorPlugin('bundle.js', data.routes, data)
+    new webpack.NoErrorsPlugin() // https://github.com/webpack/docs/wiki/list-of-plugins#noerrorsplugin
   ],
 
   // resolve paths: http://webpack.github.io/docs/resolving.html
