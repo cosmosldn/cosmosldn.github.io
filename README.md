@@ -12,4 +12,5 @@ We are using the [Gitflow](https://www.atlassian.com/git/tutorials/comparing-wor
 
 - Create new branch from `develop`
 - Send a pull request back to `develop`
+- Ping someone to review it
 - Sit and wait 🍺
