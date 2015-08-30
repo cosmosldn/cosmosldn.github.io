@@ -9,7 +9,7 @@ export default class People extends Component {
 
     return (
       <div className={styles.root}>
-        <SplitScreen data={data.people} theme="light" />
+        <SplitScreen data={data.people} />
       </div>
     );
   }

@@ -13,8 +13,14 @@ export default class Header extends Component {
         <div className={styles.logo}>
           <CosmosLogo />
         </div>
+
         <h1 className={styles.title}>{data.header.title}</h1>
         <h2 className={styles.slogan}>{data.header.slogan[0]}</h2>
+
+        <div className={styles.image}>
+          <div className={styles.circleBlue}><div className={styles.circleMiddle}></div></div>
+          <div className={styles.circleOrange}></div>
+        </div>
       </header>
     );
   }

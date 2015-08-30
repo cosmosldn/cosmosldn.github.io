@@ -28,6 +28,6 @@
 
 @media (--wide-viewport) {
   .root li {
-    width: 33.333%;
+    width: 25%;
   }
 }

@@ -8,8 +8,13 @@
  */
 :root {
   --color-background: #fff;
-  --color-text: #333;
-  --color-text-inverted: #fff;
+  --color-text: #222;
+
+  --color-blue: #39839f;
+  --color-blue-light: #9ce0d4;
+  --color-orange: #d46f4c;
+  --color-orange-light: #e7dc80;
+
   --color-black: #1a1a1a;
   --color-dark: #232321;
   --color-yellow: #ffb91e;

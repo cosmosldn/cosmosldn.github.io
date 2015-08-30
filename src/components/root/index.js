@@ -16,7 +16,7 @@ export default class Root extends Component {
         <Header data={data} />
         <Principles data={data} />
         <Deliverables data={data} />
-        <SplitScreen data={data.products} theme="dark" />
+        <SplitScreen data={data.products} />
         <People data={data} />
         <Contact data={data} />
       </div>

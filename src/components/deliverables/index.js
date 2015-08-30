@@ -12,10 +12,6 @@ export default class Deliverables extends Component {
             <h2 className={styles.title}>{data.deliverables.title}</h2>
             <p className={styles.text}>{data.deliverables.text}</p>
           </div>
-          <div className={styles.image}>
-            <span className={styles.rectangle} />
-            <span className={styles.rectangle} />
-          </div>
         </div>
       </div>
     );

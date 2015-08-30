@@ -7,7 +7,6 @@
 .root {
   position: relative;
   overflow: hidden;
-  color: #fff;
 }
 
 .root:before,
