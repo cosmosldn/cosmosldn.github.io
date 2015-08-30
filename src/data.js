@@ -14,11 +14,11 @@ module.exports = {
   principles: [
     {
       title: 'Collaborative',
-      text: 'We work with you and not for you'
+      text: 'Adaptable ways to work with you and not for you'
     },
     {
       title: 'Niche',
-      text: 'We\'re the best at what we do - because we only do two things'
+      text: 'We\'re the best at what we do – because we focus two things'
     },
     {
       title: 'Less middlemen',
@@ -48,7 +48,7 @@ module.exports = {
 
   background: {
     title: 'Multidisciplinary background',
-    text: 'With nearly 20 years combined experience across different industries, we’ve got wide rather than deep expertise, which makes us a self-sustainable studio. From budgeting to brainstorming, client facing to design perfecting. We take the best from each world: fast and creative like agencies, detail-oriented and inspiring like studios, strategic and systematic like in-house teams.'
+    text: 'With nearly 20 years combined experience across different industries, we\'ve got wide rather than deep expertise, which makes us a self-sustainable studio. From budgeting to brainstorming, client facing to design perfecting. We take the best from each world: fast and creative like agencies, detail-oriented and inspiring like studios, strategic and systematic like in-house teams.'
   },
 
   people: [
