@@ -1,12 +1,12 @@
-import styles from './core.css';
+import styles from './principles.css';
 
 import React, {Component} from 'react';
 import marked from 'marked';
 
-export default class Core extends Component {
+export default class Principles extends Component {
   render() {
     const data = this.props.data;
-    const listItems = data.core.map(function m(item, i) {
+    const listItems = data.principles.map(function m(item, i) {
       const rawMarkup = marked(item.text.toString(), {sanitize: true});
       return (
         <li key={i}>
@@ -15,6 +15,7 @@ export default class Core extends Component {
         </li>
         );
     });
+
     return (
       <div className={styles.root}>
         <div className="container">
@@ -27,6 +28,6 @@ export default class Core extends Component {
   }
 }
 
-Core.propTypes = {
+Principles.propTypes = {
   data: React.PropTypes.object
 };

@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 
 import Header from '../header';
-import Core from '../core';
-import Workflow from '../workflow';
+import Principles from '../principles';
 import Deliverables from '../deliverables';
 import SplitScreen from '../split-screen';
 import People from '../people';
@@ -15,8 +14,7 @@ export default class Root extends Component {
     return (
       <div className="Root">
         <Header data={data} />
-        <Core data={data} />
-        <Workflow data={data} />
+        <Principles data={data} />
         <Deliverables data={data} />
         <SplitScreen data={data.products} theme="dark" />
         <People data={data} />
