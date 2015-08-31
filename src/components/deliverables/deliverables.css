@@ -1,10 +1,22 @@
 /**
- * Workflow styles
+ * Deliverables styles
  */
 
 @import '../shared/styles/base.css';
+@import '../shared/styles/typography.css';
+@import '../shared/styles/grid.css';
 
 .root {
   padding: 14rem 0;
   overflow: hidden;
+}
+
+.copy {
+  composes: md6;
+  composes: last;
+}
+
+.title {
+  composes: l;
+  composes: mainTitle;
 }
