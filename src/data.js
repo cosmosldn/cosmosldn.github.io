@@ -42,11 +42,13 @@ module.exports = {
   ],
 
   deliverables: {
+    label: 'Our deliverables',
     title: 'Deliver, test & scale',
     text: 'Our deliverables are real products tailored to meet our client\'s needs. This means they\'re not getting bombarded with always-changing-hard-coded PSD files. Everything we do is built with testability and extensibility in mind.'
   },
 
   background: {
+    label: 'Our background',
     title: 'Multidisciplinary background',
     text: 'With nearly 20 years combined experience across different industries, we\'ve got wide rather than deep expertise, which makes us a self-sustainable studio. From budgeting to brainstorming, client facing to design perfecting. We take the best from each world: fast and creative like agencies, detail-oriented and inspiring like studios, strategic and systematic like in-house teams.'
   },

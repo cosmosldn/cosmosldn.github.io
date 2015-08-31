@@ -3,6 +3,8 @@
  */
 
 @import '../shared/styles/base.css';
+@import '../shared/styles/typography.css';
+@import '../shared/styles/grid.css';
 
 .root {
   padding: 14rem 0;
@@ -30,19 +32,22 @@
 
 
 .title {
-  text-transform: uppercase;
+  composes: l;
+  composes: mainTitle;
+}
 
-  composes: l from '../shared/styles/typography.css';
+.slogan {
+  composes: xs;
+  composes: label;
 }
 
 
 .copy {
-  composes: sm4 from '../shared/styles/grid.css';
-  composes: md8 from '../shared/styles/grid.css';
-  composes: lg5 from '../shared/styles/grid.css';
+  composes: md8;
+  composes: lg5;
 }
 
-@media (--medium-viewport) {
+@media (--wide-viewport) {
   .copy {
     position: absolute;
     right: 0;
@@ -55,10 +60,15 @@
 
 .image {
   text-align: center;
-  margin: 6rem auto 0;
+  margin: 2rem auto 0;
+  composes: md9;
+  composes: lg9;
+}
 
-  composes: md9 from '../shared/styles/grid.css';
-  composes: lg9 from '../shared/styles/grid.css';
+@media () {
+  .image {
+    margin-top: 6rem;
+  }
 }
 
 .circleBlue,

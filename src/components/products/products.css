@@ -1,0 +1,11 @@
+/**
+ * Products styles
+ */
+
+@import '../shared/styles/base.css';
+
+.root {
+  background-color: var(--color-dark);
+  color: #fff;
+  padding: 14rem 0 0;
+}

@@ -1,6 +1,7 @@
 import styles from './header.css';
 
 import React, {Component} from 'react';
+import classie from 'classie';
 
 import CosmosLogo from '../svg/cosmos.js';
 
@@ -10,7 +11,7 @@ export default class Header extends Component {
 
     return (
       <header className={styles.root}>
-        <div className={styles.logo}>
+        <div className={styles.logo} onClick={this.debugger}>
           <CosmosLogo />
         </div>
 
@@ -28,6 +29,10 @@ export default class Header extends Component {
         </div>
       </header>
     );
+  }
+
+  debugger() {
+    classie.toggleClass(document.body, 'dev');
   }
 }
 

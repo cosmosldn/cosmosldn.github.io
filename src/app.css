@@ -2,8 +2,6 @@
  * App styles
  */
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-
 @import 'components/shared/styles/base.css';
 
 * {
@@ -20,14 +18,28 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', 'Helvetica Neue', arial, sans-serif;
+  font-family: 'Baskerville', 'Helvetica Neue', arial, sans-serif;
   line-height: 1.45;
 
-  padding: 0 5%;
+  /*padding: 0 5%;*/
 
   /* change to variables */
-  font-size: 1.618rem;
-  color: #333;
+  font-size: var(--size-s);
+  line-height: 2.4rem;
+  color: var(--color-text);
+}
+
+@media (--medium-viewport) {
+  body {
+    font-size: var(--size-lg-s);
+    line-height: 2.4rem;
+  }
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'brandon-grotesque', 'Helvetica Neue', arial, sans-serif;
+  font-weight: 900;
 }
 
 h1 {
@@ -42,6 +54,7 @@ h2, h3 {
   margin: 0 auto;
   max-width: 96rem;
   box-sizing: content-box;
+  padding: 0 5%;
 }
 
 :global .container:before,

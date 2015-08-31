@@ -3,31 +3,28 @@
  */
 
 @import '../shared/styles/base.css';
+@import '../shared/styles/grid.css';
+@import '../shared/styles/typography.css';
 
 .root {
-  padding: 3rem 0;
+  padding: 0 0 14rem;
 }
 
-.root ul {
+.list {
   list-style: none;
   overflow: hidden;
-  margin: 0 -1.5rem;
 }
 
-.root li {
-  float: left;
-  width: 100%;
-  padding: 3rem 1.5rem;
+.item {
+  text-align: center;
+  padding: 0 1.5rem;
+
+  composes: col;
+  composes: md6;
+  composes: lg3;
 }
 
-@media (--small-viewport) {
-  .root li {
-    width: 50%;
-  }
-}
-
-@media (--wide-viewport) {
-  .root li {
-    width: 25%;
-  }
+.title {
+  composes: xs;
+  composes: label;
 }
