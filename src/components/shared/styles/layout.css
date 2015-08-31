@@ -1,13 +1,8 @@
 /**
- * Deliverables styles
+ * Layout styles
  *
  * Layout
  */
-
- .container {
-   margin: 0 auto;
-   max-width: 96rem;
- }
 
 .half {
   float: left;

@@ -3,9 +3,8 @@
  *
  * Base variables
  *
- * Do we really need this?
- * This is part of cssnext
  */
+
 :root {
   --color-background: #fff;
   --color-text: #222;
@@ -29,5 +28,6 @@
 }
 
 @custom-media --small-viewport (min-width: 480px);
+@custom-media --medium-viewport (min-width: 768px);
 @custom-media --wide-viewport (min-width: 960px);
 @custom-media --huge-viewport (min-width: 1200px);

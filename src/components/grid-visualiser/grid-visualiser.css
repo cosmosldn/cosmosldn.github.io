@@ -1,0 +1,62 @@
+/**
+ * Grid visualiser
+ */
+
+@import '../shared/styles/base.css';
+
+.root {
+  position: fixed;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  z-index: 9;
+  pointer-events: none;
+  height: 100vh;
+
+  display: none;
+}
+
+:global(body.dev) .root {display: block;}
+
+.root :global .container {
+  height: 100vh;
+}
+
+.sm1 {
+  composes: col from '../shared/styles/grid.css';
+  composes: sm1 from '../shared/styles/grid.css';
+}
+
+.md1 {
+  composes: col from '../shared/styles/grid.css';
+  composes: md1 from '../shared/styles/grid.css';
+}
+
+.root span {
+  height: 100%;
+  background: tomato;
+  opacity: .1;
+  display: block;
+}
+
+.small,
+.medium {
+  height: 100%;
+  composes: row from '../shared/styles/grid.css';
+}
+
+@media (--medium-viewport) {
+  .small {
+    display: none;
+  }
+}
+
+.medium {
+  display: none;
+}
+
+@media (--medium-viewport) {
+  .medium {
+    display: block;
+  }
+}

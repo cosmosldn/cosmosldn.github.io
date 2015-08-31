@@ -23,6 +23,8 @@ body {
   font-family: 'Montserrat', 'Helvetica Neue', arial, sans-serif;
   line-height: 1.45;
 
+  padding: 0 5%;
+
   /* change to variables */
   font-size: 1.618rem;
   color: #333;
@@ -39,4 +41,13 @@ h2, h3 {
 :global .container {
   margin: 0 auto;
   max-width: 96rem;
+  box-sizing: content-box;
 }
+
+:global .container:before,
+:global .container:after {
+  content: " ";
+  display: table;
+}
+
+:global .container:after { clear: both; }

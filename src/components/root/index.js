@@ -6,6 +6,7 @@ import Deliverables from '../deliverables';
 import SplitScreen from '../split-screen';
 import People from '../people';
 import Contact from '../contact';
+import GridVisualiser from '../grid-visualiser';
 
 export default class Root extends Component {
   render() {
@@ -19,6 +20,8 @@ export default class Root extends Component {
         <SplitScreen data={data.products} />
         <People data={data} />
         <Contact data={data} />
+
+        <GridVisualiser />
       </div>
     );
   }
