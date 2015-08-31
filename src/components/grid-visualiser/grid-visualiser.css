@@ -34,12 +34,10 @@
 
 .root span {
   height: 100%;
-  background-color: tomato;
+  background-color: #ccc;
   opacity: .1;
   display: block;
 }
-
-.root span:nth-child(even) { background: blue; }
 
 .small,
 .medium {
