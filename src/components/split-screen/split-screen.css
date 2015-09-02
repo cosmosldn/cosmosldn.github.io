@@ -9,7 +9,6 @@
 .root {
   position: relative;
   overflow: hidden;
-  padding: 14rem 0;
 }
 
 .root:before,
@@ -51,11 +50,10 @@
 .light .item:nth-child(2) { background-color: var(--color-orange); }
 
 
-/*.item {
-  padding: 12rem 6rem;
-}*/
 
 .item {
+  margin-bottom: 8rem;
+
   composes: col;
   composes: md5;
 }
