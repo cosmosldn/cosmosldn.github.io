@@ -1,41 +1,22 @@
 /**
- * Workflow styles
+ * Deliverables styles
  */
 
 @import '../shared/styles/base.css';
+@import '../shared/styles/typography.css';
+@import '../shared/styles/grid.css';
 
 .root {
   padding: 14rem 0;
   overflow: hidden;
-  background-color: var(--color-blue);
 }
 
-.image {
-  text-align: center;
+.copy {
+  composes: md6;
+  composes: last;
 }
 
-.image,
-.content {
-  composes: half from '../shared/styles/layout.css';
-}
-
-.title,
-.text {
-  color: var(--color-text-inverted);
-}
-
-.rectangle {
-  display: inline-block;
-  background-color: var(--color-background);
-  width: 25%;
-  height: 0;
-  padding-top: 55%;
-  margin: 0 1rem;
-
-  composes: longShadowOnBlue from '../shared/styles/layout.css';
-}
-
-.rectangle:last-child {
-  width: 22%;
-  padding-top: 35%;
+.title {
+  composes: l;
+  composes: mainTitle;
 }

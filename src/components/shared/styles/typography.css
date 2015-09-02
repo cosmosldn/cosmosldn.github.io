@@ -4,8 +4,65 @@
  * Typography
  */
 
- .x { font-size: 0.618rem; }
- .s { font-size: 1.618rem; }
- .m { font-size: 2.618rem; }
- .l { font-size: 4.236rem; }
- .x { font-size: 6.854rem; }
+.xs {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.s {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.m {
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
+.l {
+  font-size: 3.4rem;
+  line-height: 3.4rem;
+}
+
+.xl {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  .xs {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  .s {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+
+  .m {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .l {
+    font-size: 4.8rem;
+    line-height: 5rem;
+  }
+
+  .xl {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+}
+
+
+.mainTitle {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.label {
+  text-transform: uppercase;
+}

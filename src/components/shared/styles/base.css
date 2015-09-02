@@ -3,26 +3,43 @@
  *
  * Base variables
  *
- * Do we really need this?
- * This is part of cssnext
  */
+
 :root {
   --color-background: #fff;
-  --color-text: #333;
-  --color-text-inverted: #fff;
+  --color-text: #222;
+
+  --color-blue: #39839f;
+  --color-blue-light: #9ce0d4;
+  --color-orange: #d46f4c;
+  --color-orange-light: #e7dc80;
+
   --color-black: #1a1a1a;
   --color-dark: #232321;
   --color-yellow: #ffb91e;
   --color-blue: #86abff;
   --color-orange: #f4834f;
 
-  --size-xs: 0.618rem;
-  --size-s: 1.618rem;
-  --size-m: 2.618rem;
-  --size-l: 4.236rem;
-  --size-xl: 6.854rem;
+  /* Use only when not possible with composing from typography */
+  --size-xs: 1.2rem;
+  --size-s: 1.6rem;
+  --size-m: 2.4rem;
+  --size-l: 3.4rem;
+  --size-xl: 5rem;
+
+  --size-lg-xs: 1.4rem;
+  --size-lg-s: 1.8rem;
+  --size-lg-m: 3rem;
+  --size-lg-l: 5rem;
+  --size-lg-xl: 7rem;
+
+  /* Grid units */
+  --grid: 16.666%;
+  --grid-md: 8.333%;
+  --grid-lg: 8.333%;
 }
 
 @custom-media --small-viewport (min-width: 480px);
+@custom-media --medium-viewport (min-width: 768px);
 @custom-media --wide-viewport (min-width: 960px);
 @custom-media --huge-viewport (min-width: 1200px);

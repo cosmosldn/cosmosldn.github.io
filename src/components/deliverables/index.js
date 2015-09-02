@@ -8,13 +8,9 @@ export default class Deliverables extends Component {
     return (
       <div className={styles.root}>
         <div className="container">
-          <div className={styles.content}>
+          <div className={styles.copy}>
             <h2 className={styles.title}>{data.deliverables.title}</h2>
             <p className={styles.text}>{data.deliverables.text}</p>
-          </div>
-          <div className={styles.image}>
-            <span className={styles.rectangle} />
-            <span className={styles.rectangle} />
           </div>
         </div>
       </div>

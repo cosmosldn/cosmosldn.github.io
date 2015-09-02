@@ -9,9 +9,9 @@ export default class Principles extends Component {
     const listItems = data.principles.map(function m(item, i) {
       const rawMarkup = marked(item.text.toString(), {sanitize: true});
       return (
-        <li key={i}>
-          <h3>{item.title}</h3>
-          <p><span dangerouslySetInnerHTML={{__html: rawMarkup}} /></p>
+        <li className={styles.item} key={i}>
+          <h3 className={styles.title}>{item.title}</h3>
+          <p className={styles.text}><span dangerouslySetInnerHTML={{__html: rawMarkup}} /></p>
         </li>
         );
     });
@@ -19,7 +19,7 @@ export default class Principles extends Component {
     return (
       <div className={styles.root}>
         <div className="container">
-          <ul>
+          <ul className={styles.list}>
             {listItems}
           </ul>
         </div>

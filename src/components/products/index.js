@@ -1,21 +1,21 @@
-import styles from './people.css';
+import styles from './products.css';
 
 import React, {Component} from 'react';
 import SplitScreen from '../split-screen';
 
-export default class People extends Component {
+export default class Products extends Component {
   render() {
     const data = this.props.data;
 
     return (
       <div className={styles.root}>
-        <SplitScreen data={data.people} />
+        <SplitScreen data={data.products} />
       </div>
     );
   }
 }
 
-People.propTypes = {
+Products.propTypes = {
   data: React.PropTypes.object,
-  people: React.PropTypes.array
+  products: React.PropTypes.array
 };

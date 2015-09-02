@@ -3,11 +3,13 @@
  */
 
 @import '../shared/styles/base.css';
+@import '../shared/styles/grid.css';
+@import '../shared/styles/typography.css';
 
 .root {
   position: relative;
   overflow: hidden;
-  color: #fff;
+  padding: 14rem 0;
 }
 
 .root:before,
@@ -40,9 +42,7 @@
   }
 }
 
-.item {
-  padding: 12rem 6rem;
-}
+
 
 .dark .item:nth-child(1) { background-color: var(--color-dark); }
 .dark .item:nth-child(2) { background-color: var(--color-black); }
@@ -51,14 +51,36 @@
 .light .item:nth-child(2) { background-color: var(--color-orange); }
 
 
+/*.item {
+  padding: 12rem 6rem;
+}*/
+
+.item {
+  composes: col;
+  composes: md5;
+}
+
+/*
+Ideal solution would be to compose a class from grid.css
+which floats right.
+But it doesnt work because the target is a pseudo selector
+
+composes: right;
+ */
+.item:last-child { float: right; }
+
 @media (--wide-viewport) {
   .item {
     position: relative;
     z-index: 2;
-    float: left;
-    width: 50%;
   }
+}
 
-  .item:nth-child(1) { padding-left: 0; }
-  .item:nth-child(2) { padding-right: 0; }
+/*
+Refactor to content inside
+splitscreen can be different
+ */
+.title {
+  composes: m;
+  composes: label;
 }

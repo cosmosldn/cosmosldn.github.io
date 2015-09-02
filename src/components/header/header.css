@@ -3,19 +3,67 @@
  */
 
 @import '../shared/styles/base.css';
+@import '../shared/styles/typography.css';
+@import '../shared/styles/grid.css';
 
 .root {
-  background: var(--color-black);
   padding: 14rem 0;
-  text-align: center;
-  color: #fff;
 }
 
-.root h2 {
-  max-width: 36rem;
-  margin: 2rem auto 0;
+.root :global(.container) {
+  position: relative;
+}
+
+
+.logo {
+  position: fixed;
+  top: 1rem;
+  left: 2rem;
+  width: 85px;
+}
+
+.logo svg {
+  width: 100%;
 }
 
 .logo path {
-  fill: #fff;
+  fill: var(--color-text);
+}
+
+
+.title {
+  composes: l;
+  composes: mainTitle;
+}
+
+.slogan {
+  composes: xs;
+  composes: label;
+}
+
+
+.copy {
+  composes: col-md;
+  composes: md8;
+  composes: lg5;
+}
+
+@media (--wide-viewport) {
+  .copy {
+    margin-left: calc(var(--grid-lg) * 7);
+    text-align: left;
+    margin-bottom: -9rem;
+    position: relative;
+    z-index: 3;
+  }
+}
+
+
+.image {
+  text-align: center;
+  margin: 2rem auto 0;
+  clear: both;
+
+  composes: md9;
+  composes: lg9;
 }

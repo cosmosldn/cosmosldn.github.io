@@ -9,10 +9,11 @@ export default class SplitScreen extends Component {
 
     const items = data.map(function m(item, i) {
       const rawMarkup = marked(item.text.toString(), {sanitize: false});
+
       return (
         <div className={styles.item} key={i}>
-          <h3>{item.title}</h3>
-          <p><span dangerouslySetInnerHTML={{__html: rawMarkup}} /></p>
+          <h3 className={styles.title}>{item.title}</h3>
+          <p className={styles.text}><span dangerouslySetInnerHTML={{__html: rawMarkup}} /></p>
         </div>
       );
     });
