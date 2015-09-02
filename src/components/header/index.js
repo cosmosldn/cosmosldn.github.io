@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 import classie from 'classie';
 
 import CosmosLogo from '../svg/cosmos.js';
+import HeaderLogo from '../svg/header-logo.js';
 
 export default class Header extends Component {
   render() {
@@ -23,8 +24,7 @@ export default class Header extends Component {
           </div>
 
           <div className={styles.image}>
-            <div className={styles.circleBlue}><div className={styles.circleMiddle}></div></div>
-            <div className={styles.circleOrange}></div>
+            <HeaderLogo />
           </div>
         </div>
       </header>

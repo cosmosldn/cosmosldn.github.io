@@ -24,6 +24,13 @@
 .sm6 { width: calc(16.666% * 6); }
 
 @media screen and (min-width: 768px) {
+  .col-md {
+    float: left;
+    padding-left: 6px;
+    padding-right: 6px;
+    -webkit-background-clip: content-box;
+  }
+
   .md1 { width: 8.333%; }
   .md2 { width: calc(8.333% * 2); }
   .md3 { width: calc(8.333% * 3); }
@@ -39,6 +46,13 @@
 }
 
 @media screen and (min-width: 960px) {
+  .col-lg {
+    float: left;
+    padding-left: 6px;
+    padding-right: 6px;
+    -webkit-background-clip: content-box;
+  }
+
   .lg1 { width: 8.333%; }
   .lg2 { width: calc(8.333% * 2); }
   .lg3 { width: calc(8.333% * 3); }

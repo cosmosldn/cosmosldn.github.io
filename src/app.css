@@ -64,3 +64,17 @@ h2, h3 {
 }
 
 :global .container:after { clear: both; }
+
+
+:global .headerLogo {
+
+}
+
+:global #headerLogoGradientFirstTop { stop-color: var(--color-blue); }
+:global #headerLogoGradientFirstBottom { stop-color: var(--color-blue-light); }
+
+:global #headerLogoGradientMiddleTop { stop-color: var(--color-orange-light); }
+:global #headerLogoGradientMiddleBottom { stop-color: var(--color-blue); }
+
+:global #headerLogoGradientLastTop { stop-color: var(--color-orange); }
+:global #headerLogoGradientLastBottom { stop-color: var(--color-orange-light); }
